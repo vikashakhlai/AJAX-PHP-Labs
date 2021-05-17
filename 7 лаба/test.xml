@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookstore>
+    <book id='1'>
+        <title>Гарри Поттер и философский камень </title>
+        <author>Джоан Ролинг</author>
+        <cost>500</cost>
+        <quantity>15</quantity>
+    </book>
+    <book id='2'>
+        <title>Дракула</title>
+        <author>Брэм Стокер</author>
+        <cost>430</cost>
+        <quantity>5</quantity>
+    </book>
+    <book id='3'>
+        <title>Преступление и наказание</title>
+        <author>Федор Достоевский</author>
+        <cost>400</cost>
+        <quantity>10 </quantity>
+    </book>
+    <book id='4'>
+        <title>Герои нашего времени</title>
+        <author>Михаил Лермонтов</author>
+        <cost>700</cost>
+        <quantity>10 </quantity>
+    </book>
+
+</bookstore>

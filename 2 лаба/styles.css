@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(to top, #26239C, #0600FF) no-repeat;
+  color: white;
+  height: 810px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  color:white;
+  font-family: 'Comic Sans MS', serif;
+  font-weight:300;
+  font-size:20px;
+}
+
+.ex p {
+  text-align: left;
+  width: 590px;
+  font-weight: 300;
+}
+
+.ex h1 {
+  text-align: left;
+  font-family: 'Lobster', cursive;
+  font-weight: 600;
+  color:#9EA000;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 600;
+  color:#9EA000;
+  text-align: center;
+}
+
+p {
+  padding-bottom: 40px;
+  font-size: 24px;
+  text-align: center;
+  color:white;
+  font-family: 'Comic Sans MS', serif;
+  font-weight:600;
+}
+
+#send {
+  background-color: yellow;
+  color: red;
+  font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-top: 10px;
+  border-radius: 16px;
+  border-color: green;
+  transition: color, border 0.35s ease;
+  outline: none !important;
+  margin-bottom: 20px;
+  }
+

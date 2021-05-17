@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>1 Лабораторная</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        function getdetails(){
+    var name = $('#name').val();
+    var rno = $('#rno').val();
+    $.ajax({
+        type: "POST",
+        url: "details.php",
+        data: {fname:name, id:rno}
+    }).done(function( result )
+        {
+            $("#msg").html(result );
+        });
+}
+</script>
+</head>
+
+<body>
+    <div class="text">
+        <h1>Лабораторная работа №1</h1>
+        <p>Выполнила студентка 2 курса 5 группы 2 подгруппы Шахлай Виктория</p>
+    </div>
+    <div class="ex">
+        <h1>Задание:</h1>
+        <p>Получите имена и номера целой группы студентов, используя jquery и ajax, отошлите их в файл details.php.
+        Для выполнения данного задания вам понадобится создать базу данных school и таблицу students. Таблица student содержит поля с именами, порядковым номером и адресом.</p>
+    </div>
+    <div class="rel">
+    <h1>Реализация:</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <td><input type="button" name="button" id="submit" value="click" onClick="getdetails()" /></td>
+            </tr>
+        </table>
+        <div id="msg"></div>
+    </div>
+</div>
+</body>
+
+</html>

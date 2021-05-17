@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<!-- 	<script>
+		let arr=[];
+		arr[0]=956.1007;
+		arr[1]=2147483;
+		let a=arr[0].toString(16);
+		let b=arr[1].toString(16);
+		alert(a);
+		alert(b);
+		let c=parseInt(a,16);
+		let d=parseInt(b,16);
+		alert(c);
+		alert(d);
+	</script> -->
+
+<!-- 	<script>
+		let arr=[];
+		arr[0]=956.1007;
+		arr[1]=2147483;
+		let a=arr[0].toString(16);
+		let b=arr[1].toString(16);
+		alert(a);
+		alert(b);
+		let c=parseInt(a,16);
+		let d=parseInt(b,16);
+		alert(c);
+		alert(d);
+	</script> -->
+
+
+<!-- 	<script>
+let arr=[];
+		arr[0]=956.1007;
+		arr[1]=2147483;
+		let a=parseFloat(arr[0]);
+		let b=arr[1].toString(16);
+		let c=a.toString(16);
+		let d=parseInt(b,16);
+		let e=parseInt(c,16);
+		let f=parseFloat(e);
+		alert(a);
+		alert(b);
+		alert(c);
+		alert(d);
+		alert(e);
+	</script> -->
+	<script>
+		function parseFloat(str, radix) {
+        let parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
+
+let a = 28.4382;
+let b = a.toString(16);
+let f = parseFloat(b, 16);
+alert(a + " -> " + b + " -> " + f );
+
+	</script>
+</body>
+</html>

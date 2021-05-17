@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     <script type="text/javascript">
+    let array={
+    	"key1":"value1",
+    	"key2":"value2",
+    	"key3":"value3",
+    	"key4":"value4"
+    }
+    let elements=Object.keys(array).length;
+    alert(elements);
+    for(key in array) {
+ 		alert(key + " = " + array[key]);
+}
+    </script> -->
+<!--     <script>
+    let myObj = {
+    'b': 'asdsadfd',
+    'c': 'masdasaf',
+    'a': 'dsfdsfsdf',
+    'd':'sfsdfsdfsdf',
+    'f':'sdsdfsdfsdfs',
+  }
+  let keys = Object.keys(myObj);
+  let len = keys.length;
+
+keys.sort();
+
+for (i = 0; i < len; i++) {
+  k = keys[i];
+  alert(k + ':' + myObj[k]);
+}
+}
+    </script> -->
+        <script>
+    let myObj = {
+    'b': 'asdsadfd',
+    'c': 'masdasaf',
+    'a': 'dsfdsfsdf',
+    'd':'sfsdfsdfsdf',
+    'f':'sdsdfsdfsdfs',
+    'z':'asdasdasdasd',
+    'y':'asdasdasda',
+    'w':'asdasdasda'
+  }
+  let keys = Object.keys(myObj);
+  let len = keys.length;
+  let first=len/2;
+  let second=len-first;
+  
+
+keys.sort();
+
+for (i = 0; i < first; i++) {
+  k = keys[i];
+  document.write(k + ':' + myObj[k] + "<br>");
+}
+
+for (i = 0; i < first; i++) {
+  delete keys[i];
+}
+
+document.write("Вторая часть массива <br>" );
+
+
+keys.reverse();
+for (i = 0; i < second; i++) {
+  k = keys[i];
+ document.write(k + ':' + myObj[k] + "<br>");
+}
+
+    </script>
+
+</body>
+
+</html>

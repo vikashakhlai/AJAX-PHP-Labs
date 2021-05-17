@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<input type='button' value='Запросить содержимое' onclick='start()'/>
+<br /><br />
+<div id='wrap' style='display:none;'>
+<hr />
+<p>Название книги: <b><span id='res1'></span></b></p>
+<p>Автор: <b><span id='res2'></span></b></p>
+<p>Цена: <b><span id='res3'></span> руб.</b></p>
+<p>Количество на складе: <b><span id='res4'></span> шт.</b></p>
+<hr />
+</div>
+    <script>
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            var r = xhttp.responseXML;
+            document.getElementById('ajax').innerHTML = "Содержимое первого тэга name в XML файле: " + r.getElementsByTagName('author')[0].childNodes[0].nodeValue;
+            var author = r.getElementsByTagName('author');
+            var cont = "Содержимое всех тэгов author в XML файле: <br />";
+            for (var i = 0; i < author.length; i++) {
+                cont += (i + 1) + ". " + author[i].childNodes[0].nodeValue;
+            }
+            document.getElementById('ajax1').innerHTML = cont;
+        }
+    }
+    xhttp.open("GET", "test.xml", true);
+    xhttp.send();
+    </script>
+</body>
+
+</html>
